@@ -1,7 +1,10 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+author: 87fc1ade-5b07-4f1f-b9a8-172245fb881c
+updated_by: 87fc1ade-5b07-4f1f-b9a8-172245fb881c
+updated_at: 1633061632
 ---
-Welcome to your new Statamic website.
+Kill the messager...

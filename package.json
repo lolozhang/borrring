@@ -1,22 +1,40 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "mix",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.2.5",
-        "cross-env": "^7.0",
-        "laravel-mix": "^6.0",
-        "postcss": "^8.2.9",
-        "postcss-import": "^14.0.1",
-        "postcss-nested": "^5.0.5",
-        "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^2.1.1",
-        "vue-template-compiler": "^2.6.12"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0",
+    "gulp": "^4.0.2",
+    "laravel-mix": "^6.0",
+    "postcss": "^8.2.9",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.5",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.1.1",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "name": "borrring",
+  "description": "<p align=\"center\"><img src=\"https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg\" width=\"400\" alt=\"Statamic Logo\" /></p>",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolozhang/borrring.git"
+  },
+  "author": "lolo zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolozhang/borrring/issues"
+  },
+  "homepage": "https://github.com/lolozhang/borrring#readme"
 }
