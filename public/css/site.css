@@ -1,0 +1,33 @@
+/* This is all you. */
+
+body {
+    background-color: rgb(131, 131, 131);
+}
+
+
+div.iris {
+    position: absolute;
+    top:30px;
+    left:30px;
+}
+
+div.face {
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+div.iris-right {
+    left:138px;
+}
+
+div.iris div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background-color:#333333;
+    border-radius: 14px;
+    transform: translate(-50%, -50%);
+}
+
