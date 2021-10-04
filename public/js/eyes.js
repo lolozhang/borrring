@@ -83,3 +83,11 @@ setBackgroundColor();
 setInterval(() => {
   setBackgroundColor();
 }, 6000);
+
+
+
+function MehCursor() {
+    document.querySelector("body").style.cursor = "url('assets/meh.svg'), default";
+  }
+
+MehCursor ()

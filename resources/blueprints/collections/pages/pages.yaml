@@ -28,6 +28,18 @@ sections:
           icon: assets
           listable: hidden
           instructions_position: above
+      -
+        handle: cursor
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Cursor
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
   sidebar:
     display: Sidebar
     fields:
