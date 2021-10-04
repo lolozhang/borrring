@@ -1,6 +1,24 @@
 const irisLeft = document.querySelector("div.iris-left")
 const irisRight = document.querySelector("div.iris-right")
 
+let interval = null
+
+// move the evyes every 3s
+const startInterval = () => {
+    clearInterval(interval)
+    interval = setInterval (() => {
+        const x = Math.random() * window.innerWidth
+        const y = Math.random() * window.innerHeight
+
+        moveEye(irisLeft, x, y)
+        moveEye(irisRight, x, y)
+
+
+
+    }, 3000)
+
+}
+
 const moveEye =function (tag, mouseX, mouseY) {
     // center of the eye 
     const eyeMidX = tag.getBoundingClientRect().left
@@ -8,7 +26,7 @@ const moveEye =function (tag, mouseX, mouseY) {
 
     //find the difference between the eye and the mouse
     const diffX = mouseX - eyeMidX
-    const diffY = mouseY - eyeMidY
+    const diffY = mouseY - eyeMidY - window.pageYOffset
 
     // pythagorus theorem
 
@@ -32,7 +50,36 @@ const moveEye =function (tag, mouseX, mouseY) {
 
 }
 
+startInterval()
+
 document.addEventListener("mousemove", function (event) {
+    startInterval()
     moveEye(irisLeft, event.pageX, event.pageY)
     moveEye(irisRight, event.pageX, event.pageY)
 })
+
+const background = document.querySelector("body");
+
+const getRandomNumber = (MIN, MAX) => {
+  return Math.ceil(Math.random() * (MAX - MIN) + MIN);
+
+}
+
+const getRandomColor = () => {
+  const h = getRandomNumber(0, 360);
+  const s = getRandomNumber(90, 100);
+  const l = getRandomNumber(80, 90);
+  return `hsl(${h}deg, ${s}%, ${l}%)`;
+};
+
+const setBackgroundColor = () => {
+  const randomColor = getRandomColor();
+  background.style.backgroundColor = randomColor;
+  background.style.transition = "all 6s";
+};
+
+setBackgroundColor();
+
+setInterval(() => {
+  setBackgroundColor();
+}, 6000);
